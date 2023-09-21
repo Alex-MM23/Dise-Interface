@@ -16,7 +16,7 @@ body {
 
 .section-content {
     display: grid;
-    height: 100vh;
+    height: 100.6vh;
     color: black;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -48,7 +48,8 @@ body {
 
 .column {
     border: 1px solid black;
-    padding:72% 15px;
+    text-align: center;
+    /* padding:48% 15px; */
 }
 
 header{
@@ -72,7 +73,7 @@ header > h3 {
 }
 
 .content-item {
-    padding: 0px 6%;
+    padding: 0px 7.5%;
 }
 .content-xitem {
     padding:0px 7.3%;
@@ -106,4 +107,21 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.float-cont {
+    float: left;
+    height: 50%;
+    width: 100%;
+    border: 0.1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }

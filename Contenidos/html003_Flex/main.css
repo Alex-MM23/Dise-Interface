@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "zheader" "zsection" "zfooter";
+}
+
+header {
+    grid-area: zheader;
+    background-color: black;
+    color: #fff;
+}
+
+section {
+    grid-area: zsection;
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    grid-area: zfooter;
+    background-color: black;
+    color: #fff;
+}
+
+section > div {
+    width: 24%;
+    height: 100px;
+    background-color: lightblue;
+    margin-left: 5px;
+}

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenido de la pagina */
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 65px 1fr 45px;
+    grid-template-areas: 
+    "headerz headerz"
+    "navz sectionz" 
+    "footerz footerz";
+    background-color: #FFFFFF;
+}
+
+header {
+    grid-area: headerz;
+    background-color: #87CEFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-area: navz;
+    background-color: #0070FF;
+    margin: 8% 0px 16% 0px;
+}
+
+section {
+    grid-area: sectionz;
+    margin-left: 30%;
+    margin-top: 28%;
+}
+
+footer {
+    grid-area: footerz;
+    background-color: #87CEFA;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+/* Contenido de el horario */
+
+.content-body {
+    height: 100vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 50px 1fr 25px;
+    grid-template-areas: 
+    "zheader zheader"
+    "znav zsection" 
+    "zfooter zfooter";
+}
+
+.content-header {
+    grid-area: zheader;
+    background-color: #DCDCDC;
+    color: #41B3D2;
+    border: 0.5px solid black;
+}
+
+.content-header > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-nav {
+    grid-area: znav;
+    background-color: #DCDCDC;
+    color: #41B3D2;
+    border: 0.5px solid black;
+}
+
+.content-section {
+    grid-area: zsection;
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.content-footer {
+    grid-area: zfooter;
+    background-color: #DCDCDC;
+    color: #41B3D2;
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenidos especificos de horario */
+
+.section-content {
+    display: grid;
+    height: 100.6vh;
+    color: black;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.W {
+    background-color: #B4B464;
+}
+
+.DA {
+    background-color: #28C8C8;
+}
+
+.DI {
+    background-color: #D2D2FF;
+}
+
+.EIE {
+    background-color: #FFC8C8;
+}
+
+.EC {
+    background-color: #96DC96;
+}
+
+.I {
+    background-color: #FFD232;
+}
+
+.column {
+    border: 1px solid black;
+    text-align: center;
+    /* padding:48% 15px; */
+}
+
+.header-content {
+    display: flex;
+    border: solid 0.5px black;
+    align-items: center;
+    padding: 5px;
+}
+
+.content-item {
+    padding: 0px 4.8%;
+}
+
+.content-xitem {
+    padding:0px 7.3%;
+}
+
+.nav-content {
+    border: solid 0.5px black;
+    display: flex;
+    flex-direction: column;
+    padding: 30.1%;
+}
+
+.float-cont {
+    float: left;
+    height: 50%;
+    width: 100%;
+    border: 0.1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content-list {
+    margin-top: 5%;
+    margin-left: 14%;
+}
+
+.list-item {
+    margin: 2% 0px;
+}
+
+.tilte-header {
+    color: #333333;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+}
+
+.container-list {
+    background-color: #CCCCCC;
+    padding: 8%;
+    width: 70%;
+    border-radius: 2%;
+}
+
+.container-list > h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -179,11 +179,12 @@ footer {
 
 .content-list {
     margin-top: 5%;
-    margin-left: 14%;
+    margin-left: 8%;
 }
 
 .list-item {
     margin: 2% 0px;
+    list-style: none;
 }
 
 .tilte-header {
@@ -201,4 +202,11 @@ footer {
 
 .container-list > h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.circle-list {
+    padding: 0.5px 9.5px;
+    border-radius: 50px;
+    border: solid 1px black;
+    margin-right: 15px;
 }

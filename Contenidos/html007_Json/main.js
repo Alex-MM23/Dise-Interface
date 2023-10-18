@@ -63,3 +63,23 @@ let lista_pintores = [
 {"pin_id":"3","pin_nombre":"Rubens"},
 {"pin_id":"4","pin_nombre":"El greco"}
 ]
+
+function cargar(){
+    let html = "<ul>";
+    lista_pintores.forEach(item =>{
+        html += "<li onclick='cargarCuadros(" + item.pin_id + ")'><a>" + item.pin_nombre + "</a></li>";
+    });
+    html += "</ul>";
+
+    document.querySelector("nav").innerHTML = html;
+}
+
+function cargarCuadros(id){
+    let html = "";
+     lista_cuadros.forEach(item => {
+        if (item.cua_pin_id == id){
+            html += "<div><img src='img/" + item.cua_foto + "' alt='" + item.cua_nombre + "'><p>" + item.cua_nombre + "</p></div>";
+        }
+     });
+     document.querySelector("section").innerHTML = html;
+}

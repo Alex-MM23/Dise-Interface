@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:15% 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "zheader zheader" "znav zsection" "zfooter zfooter";
+}
+
+header {
+    grid-area: zheader;
+    background-color: black;
+    color: #fff;
+}
+
+nav {
+    grid-area: znav;
+    background-color: grey;
+}
+
+section {
+    grid-area: zsection;
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    grid-area: zfooter;
+    background-color: black;
+    color: #fff;
+}
+
+li{
+    cursor: pointer;
+    color: #fff;
+}

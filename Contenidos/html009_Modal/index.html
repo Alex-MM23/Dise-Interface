@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <div id="div1" onclick="fAbrirModal()">Abrir Modal</div>
+
+      <div id="div3" onclick="fAbrirFormulario()">Abrir formulario</div>
+      <div id="div4"></div>
+    </nav>
+    <section>
+      <div id="div_modal">
+        <div id="div_contenido">
+          COOKIES, ¿Aceptas?<br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          dignissimos, nam laborum molestiae dolorum porro aut, tempore
+          repudiandae magnam providen.
+        </div>
+        <div id="div_cerrar" onclick="fCerrarModal()">X</div>
+        <div id="div_formulario">
+          <form action="">
+            <table>
+              <tr>
+                <td>Nombre</td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>Descripción</td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>Precio</td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="button" value="PULSE" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div id="div_cerrar" onclick="fCerrarModal()">X</div>
+      </div>
+    </section>
+    <footer>Creado por Manuel Domínguez Cobollo</footer>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

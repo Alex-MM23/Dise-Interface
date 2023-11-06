@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+}
+
+#campo{
+    background-color: green;
+    height: 600px;
+    position: relative;
+}
+
+#ball{
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+}

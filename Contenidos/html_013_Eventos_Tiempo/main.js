@@ -21,7 +21,7 @@ function fPararIntervalo(){
 function fLanzarTimeout(){
     setTimeout (fNombre, 5000);
 }
-
+ 
 function fNombre(){
     document.querySelector("#caja_timeout").innerHTML = "Alex"
 }

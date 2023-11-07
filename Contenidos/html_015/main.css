@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 20px ;
+    border: solid black 1px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 12% 1fr 12%;
+    grid-template-areas: "zinicio zcarrera zmeta";
+    position: relative;
+}
+
+.inicio{
+    background-color: lightblue;
+    height: 100%;
+    grid-area: zinicio;
+    border-right: 3px dotted rgb(75, 201, 251);
+}
+
+.carrera{
+    background-color: lightgrey;
+    height: 100%;
+    grid-area: zcarrera;
+}
+
+.meta{
+    background-color: lightgreen;
+    height: 100%;
+    grid-area: zmeta;
+    border-left: 3px dotted rgb(36, 146, 36);
+}
+
+.button-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 36%;
+}
+
+.button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.coches{
+    background-color: blue;
+    height: 40px;
+    width: 80px;
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+}

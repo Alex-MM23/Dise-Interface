@@ -14,23 +14,23 @@
 }
 
 .inicio{
-    background-color: lightblue;
+    background-color: #232323;
     height: 100%;
     grid-area: zinicio;
-    border-right: 3px dotted rgb(75, 201, 251);
+    border-right: 3px dotted rgb(255, 255, 255);
 }
 
 .carrera{
-    background-color: lightgrey;
+    background-color: #808080;
     height: 100%;
     grid-area: zcarrera;
 }
 
 .meta{
-    background-color: lightgreen;
+    background-color: #e2e2e2;
     height: 100%;
     grid-area: zmeta;
-    border-left: 3px dotted rgb(36, 146, 36);
+    border-left: 3px dotted rgb(0, 0, 0);
 }
 
 .button-1{
@@ -48,13 +48,48 @@
 }
 
 .coches{
-    background-color: blue;
     height: 40px;
     width: 80px;
     margin: 20px 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: space-evenly;
     color: white;
     position: absolute;
+}
+
+.cochess{
+    height: 90px;
+    position: absolute;
+}
+
+.white-hr {
+    margin-bottom: 5.4%;
+    border: 0;
+    height: 0.5px;
+    background-color: white;
+    width: 100%;
+}
+
+.solo {
+    background-color: white; 
+    width: 100%;
+    border: 0;
+    height: 0.5px;
+    margin: -1px;
+}
+
+.copa{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: goldenrod;
+    font-size: 18px;
+    display: none;
+}
+
+.copa_img{
+    height: 200px;
+    position: relative;
+    right: 3px;
 }

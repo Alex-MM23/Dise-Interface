@@ -45,6 +45,7 @@ function fMover(){
             clearInterval(intervalo);
         }else{
             coche.style.left = (coche_left + Math.random() * 10) + "px";
+            
         }
     });
 }

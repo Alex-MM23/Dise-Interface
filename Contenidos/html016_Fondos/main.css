@@ -1,0 +1,155 @@
+*{
+    /* QUITAR MÁRGENES */ 
+    margin: 0;
+    /* QUITAR PADDINGS */ 
+    padding: 0;
+    /* MODELOS DE MEDIDAS DE CAJA */ 
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px  40px 1fr 30px;
+    grid-template-areas: "zheader" "znav" "zsection" "zfooter";
+}
+header{
+    grid-area: zheader;
+    background-color: lightblue;
+    background-image: url(../imgs/f1.webp);
+    background-repeat: no-repeat;
+    background-size: auto 65px;
+    background-position: 30px auto;
+}
+
+nav{
+    grid-area: znav;
+    background-color: lightseagreen;
+    padding: 4px 30px;
+}
+
+nav>ul{
+    list-style: none;
+}
+
+nav >ul>li{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    padding: 4px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav li:hover{
+    background-color: red;
+}
+
+section{
+    grid-area: zsection;
+    background-color: lemonchiffon;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+section > div{
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    border: 1px solid ;
+}
+
+#div1{
+    background-image: url(505a47f34260145e026393f2b78dc793.jpg);
+    color: white;
+}
+
+#div2{
+    background-image: url(fondo-hexagonal-oscuro-color-degradado.jpg);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+}
+
+#div3{
+    background-image: url(12ff181f4872a4160653181d3bab54b8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    
+}
+
+#div4{
+    background-image: url(505a47f34260145e026393f2b78dc793.jpg);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+
+#div5{
+    background-image: url(fondo-hexagonal-oscuro-color-degradado.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    opacity: .5;
+}
+
+#div6{
+    background:  linear-gradient(to bottom right, lightgreen 20%, rgb(200,200,20) 60% ,green);   
+}
+
+#div7{
+    background:  radial-gradient(rgb(144, 224, 238), red, blue);
+    color: white;
+}
+
+
+@media screen and (min-width:800px) {
+    section > div{
+        width: 48% ;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    section > div{
+        width: 31% ;
+    }
+    #d8, #d9 {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section {
+        grid-template-columns: 20% 1fr ;
+        grid-template-rows: 60px 1fr 30px;
+        grid-template-areas: "zheader zheader" "znav zsection" "zfooter zfooter";
+        background-image: url(12ff181f4872a4160653181d3bab54b8.jpg);
+        z-index: -1;
+    }
+    
+}
+
+
+#div8{
+    visibility: hidden;
+}
+
+#div9{
+    visibility: hidden;
+}
+
+
+footer{
+    grid-area: zfooter;
+    background-color: lightsalmon;
+}
+
+body > div {
+    width: 100%;
+}
